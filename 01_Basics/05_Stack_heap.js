@@ -2,10 +2,10 @@
 //  All non-primitive data types are stored in Heap Memory.
 
 // Stack exmample
-// const userName1="abdullah"
-// const userName2=userName1
-// console.log(userName1);
-// console.log(userName2);
+const userName1="abdullah"
+const userName2=userName1
+console.log(userName1);
+console.log(userName2);
 
 // Heap examples
 let user1={
