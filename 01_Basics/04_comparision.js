@@ -1,8 +1,8 @@
-// console.log(8>2);
+console.log(8>2);
 
 console.log("4">3);
 console.log(9>"2");
-
+console.log("4">"3");
 
 /* Try to avoid these types of conversion */
 
