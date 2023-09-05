@@ -39,12 +39,12 @@ const bigNumber = 93856239572357
 // #########  Non-Primitive Data types   #####
 
 // 1) Array[]
-const heros = ["Captain America", "Iron Man", "Thor", "Hulk"]
+const heros = ["Captain America", "Iron Man", "Thor", "Hulk"];
 
 // 2) Object{}
-{
-    Name: "Abdullah"
-    age: 21
+const myobj={
+    Name: "Abdullah",
+    age: 21,
 }
 
 // 3) Function
@@ -64,7 +64,7 @@ const myfunction = function () {
 // console.log(typeof bigNumber);
 
 console.log(typeof heros);
-console.log(typeof Object);
+console.log(typeof myobj);
 console.log(typeof myfunction);
 
 
@@ -74,6 +74,6 @@ console.log(typeof myfunction);
 
 
 //  null => object
+//  object => object
 //  Array => function
 //  function => function object
-//  object => function
