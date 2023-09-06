@@ -25,10 +25,10 @@ const temperature = null
 let userEmail;
 
 // 6) symbol
-const id = Symbol('45677')
+const id = Symbol('45677')q
 const userId = Symbol('45677')
 
-// console.log(id != userId);
+console.log(id != userId);
 
 // 7) BigInt
 const bigNumber = 93856239572357
