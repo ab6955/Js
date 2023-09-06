@@ -48,6 +48,21 @@ const gameName=new String("Abdullahcr Ansari")
 // console.log(`The value of ${index} returns as ${sentence.at(index)}`);    
 
 // charCodeAt() method
-const sentence="My name is Abdullah ansari"
-index=3
-console.log(`this is ${sentence.charCodeAt(index)} and ${sentence.at(index)}`);
+// const sentence="My name is Abdullah ansari"
+// index=3
+// console.log(`this is ${sentence.charCodeAt(index)} and ${sentence.at(index)}`);
+
+// startswith() method
+//  const str1="Abdullah is Engineer"
+//  console.log(str1.startsWith("is"));
+
+// split method
+const string="My name is Abdullah Ansari"
+// const words=string.split(" ")
+// console.log(words[4]);
+
+const char=string.split("")
+console.log(char[5]);
+
+const none=string.split()
+console.log(none);
