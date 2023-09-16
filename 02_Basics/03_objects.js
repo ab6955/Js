@@ -1,3 +1,5 @@
+//  Objects Laterals
+
 const mySym=Symbol("key1")
 
 const myobj = {
