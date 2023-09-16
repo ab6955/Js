@@ -1,4 +1,4 @@
-//  Objects Laterals
+//  Objects Literals
 
 const mySym=Symbol("key1")
 
