@@ -32,6 +32,7 @@
 
 
 
+
 // 2) create
 const person = {
     Name: "Abd",
@@ -82,3 +83,7 @@ Object.freeze(objec1)
 
 objec1.Name="Ansari"
 console.log(objec1);
+
+
+// 5)
+const objects={}
