@@ -36,10 +36,23 @@ const obj3={...obj1,...obj2}
 // console.log(obj3);
 
 
-console.log(tinderUser);
+// console.log(tinderUser);
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser);
-console.log(tinderUser.hasOwnProperty("name"));
+// console.log(tinderUser);
+// console.log(tinderUser.hasOwnProperty("name"));
+
+
+
+//  Objects destructure
+const company={
+    company_Name:"Minisoft",
+    Salary:"2000$",
+    Id:"abcd123"
+}
+// console.log(company.Name);
+
+const {company_Name:N}=company
+console.log(N);
