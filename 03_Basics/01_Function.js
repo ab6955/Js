@@ -1,8 +1,8 @@
-// function sayMyName(){
-//     console.log("Abdullah");
-//     console.log("Ansari");
-// }
-// sayMyName()
+function sayMyName(){
+    console.log("Abdullah");
+    console.log("Ansari");
+}
+sayMyName()
 
 
 
