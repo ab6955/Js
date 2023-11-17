@@ -21,5 +21,14 @@ map.set("IN","India")
 
 for (const [key,value] of map) {
     // console.log(key,"=>",value);
-    console.log(`${key} => ${value}`);
+    // console.log(`${key} => ${value}`);
+}
+
+
+const myObj={
+    "Country 1":"India",
+    "Country 2":"US",
+} 
+for (const key of myObj) {                  // Objects cannot be iterate using forof loop..
+    console.log(key);
 }
