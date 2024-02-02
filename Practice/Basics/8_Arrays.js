@@ -1,9 +1,9 @@
 // Array declaration.
-const myArr=[1,2,3,4]
+const myArr = [1, 2, 3, 4]
 // console.log(myArr);
 // console.log(myArr[3]);
 
-const myArr1=new Array("shaktimaan","spidermaan","batmaaaan")
+const myArr1 = new Array("shaktimaan", "spidermaan", "batmaaaan")
 // console.log(myArr1);
 
 // ************************************** Array methods*********************************************
@@ -23,7 +23,7 @@ myArr.shift();
 // console.log(myArr.indexOf("Abdullah"));
 
 
-const newArr=myArr.join()  // convert arr into string
+const newArr = myArr.join()  // convert arr into string
 
 // console.log(newArr);
 // console.log(typeof newArr);
@@ -38,8 +38,8 @@ const newArr=myArr.join()  // convert arr into string
 // console.log("C=>",myArr);
 
 
-const marvel_Heroes=["Ironman","Captain","Thor"]
-const DC_Heroes=["Batman","Flash","Superman"]
+const marvel_Heroes = ["Ironman", "Captain", "Thor"]
+const DC_Heroes = ["Batman", "Flash", "Superman"]
 
 // console.log(marvel_Heroes);
 // console.log(DC_Heroes);
@@ -55,5 +55,23 @@ const DC_Heroes=["Batman","Flash","Superman"]
 // console.log(allNewHeroes)
 
 
-const anotherArr=[1,2,3,[4,5],6,[7,[8,9]]]
-console.log(anotherArr.flat(1));
+const anotherArr = [1, 2, 3, [4, 5], 6, [7, [8, 9]]]
+// console.log(anotherArr.flat(1));
+
+console.log(Array.isArray(["Abdulah", "Ansari", 123]));
+console.log(Array.from({ name: "Abdullah" }));
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+const newarray = Array.of(score1, score2, score3)
+console.log(newarray);
+
+console.log(Array.of("Abdullah", 123, true));
+console.log(Array.from("Abdullah"));
+console.log(Array.of(("Abdullah")));
+
+const array=[1,2,3,4]
+array.reverse()
+console.log(array);
