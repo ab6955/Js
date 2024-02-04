@@ -14,11 +14,11 @@ const user1 = {
     email: "ansariabd62@gmail.com",
     is12passed: true
 }
-// console.log(user1.name);
-// console.log(user1["name"]);
-// console.log(user1["fullName"]);
-// console.log(user1[mySym]);
-// Object.freeze(user1);
+console.log(user1.name);
+console.log(user1["name"]);
+console.log(user1["fullName"]);
+console.log(user1[mySym]);
+Object.freeze(user1);
 
 user1.greeting = function () {
     console.log(`hello world`);
@@ -35,10 +35,12 @@ user1.greeting2 = function () {
 
 
 
+
+
 const facebook = new Object() // this object is known as singleton.
 // const facebook={} // this object is known as non-singleton.
 
-// facebook["Name"]="Abdullah"  // this and below are same. 
+// facebook["Name"]="Abdullah"  // this and below one are same. 
 facebook.Name = "Abdullah"
 facebook.id = "1234abc"
 facebook.email = "ansariabd62@gmail.com"
@@ -86,13 +88,13 @@ const array1 = [
     }
 ]
 
-// console.log(array1[0]);
-// console.log(array1[1].name);
-// console.log(array1[2].id);
+console.log(array1[0]);
+console.log(array1[1].name);
+console.log(array1[2].id);
 
 
-// console.log(Object.keys(array1));
+console.log(Object.keys(array1));
 console.log(Object.values(array1));
-// console.log(Object.keys(user1))  //return keys in arrays
-// console.log(Object.values(user1));  //return values in arrays
-// console.log(Object.entries(user1));
+console.log(Object.keys(user1))  //return keys in arrays
+console.log(Object.values(user1));  //return values in arrays
+console.log(Object.entries(user1));
