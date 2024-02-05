@@ -98,3 +98,26 @@ console.log(Object.values(array1));
 console.log(Object.keys(user1))  //return keys in arrays
 console.log(Object.values(user1));  //return values in arrays
 console.log(Object.entries(user1));
+
+
+
+
+
+//   ****** Destruction**************
+
+const course={
+    name:"AIDS",
+    price:999,
+    instructor:"Abdullah"
+}
+
+// console.log(course.instructor)
+const {instructor:abc}=course
+const {name:xyz}=course
+const {price:abc123}=course
+
+
+console.log(abc);
+console.log(xyz);
+console.log(abc123);
+
