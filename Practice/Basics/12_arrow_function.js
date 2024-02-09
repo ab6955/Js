@@ -39,4 +39,3 @@ const chai = () => {
 
 const addTwo = (val1, val2) => (val1 + val2 )  //if returning in same line then no need to explicitly write return keyword.
 // console.log(addTwo(3, 2))
-
