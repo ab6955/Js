@@ -134,7 +134,7 @@ function fun(item) {
     // console.log(item);
 }
 
-arr1.forEach(fun)   //very interesting and easy
+arr1.forEach(fun)   //very interesting and easy. Here only give refernce (do not call the function). 
 
 const coding = [
     {
