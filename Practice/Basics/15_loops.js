@@ -125,7 +125,7 @@ for (let key in name) {
 
 const arr1 = ["js", "py", "java"]
 
-// arr1.forEach( function(item){
+// arr1.forEach( function(item){    // In declaration of foreach loop , do not write the name of function and all are same.
 arr1.forEach((item) => {
     // console.log(item);
 })
@@ -161,7 +161,7 @@ coding.forEach((item) => {
 
 
 const coding2 = ["js", "py", 'java']
-const result = coding2.forEach((item) => {
+const result = coding2.forEach((item) => {  
     // console.log(item);
     return item;
 })
