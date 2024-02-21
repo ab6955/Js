@@ -161,7 +161,7 @@ coding.forEach((item) => {
 
 
 const coding2 = ["js", "py", 'java']
-const result = coding2.forEach((item) => {  
+const result = coding2.forEach((item) => {
     // console.log(item);
     return item;
 })
@@ -199,6 +199,62 @@ const books = [
 
 
 let bookdata = books.filter((b) => b.edition > 2000)
-console.log(bookdata);
+// console.log(bookdata);
 
-// **************** 
+// Filter is only use for condition checkings Only. 
+
+// ************ Map ******   
+const newArr = [1, 2, 3, 4, 5]
+const arr = newArr.map((item) => {
+    return (item + 10)
+})
+// console.log(arr);
+
+const myarr = []
+newArr.forEach((item) => {
+    myarr.push(item + 10)
+})
+// console.log(myarr);
+
+const arr12 = [1, 2, 3, 4, 5, 6, 7, 8]
+
+const new2 = arr12
+    .map((item) => { return item * 10 })
+    .map((item) => { return item + 2 })
+    .filter((item) => item > 30)
+
+// console.log(new2);
+
+
+// ********** reduce  *****
+
+const myNum = [1, 2, 3, 4]
+
+// const myTotal = myNum.reduce(function (accumulator, currentValue) {
+//     console.log(`Accumulator: ${accumulator} and currentValue: ${currentValue}`);
+//     return accumulator + currentValue
+// }, 0)
+// console.log(myTotal);
+
+const myTotal = myNum.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+console.log(myTotal);
+
+const shoppingCart = [{
+    itemName: "js Course",
+    price: 100
+},
+{
+    itemName: "py Course",
+    price: 200
+},
+{
+    itemName: "Data science Course",
+    price: 300
+},
+{
+    itemName: "Mobile development Course",
+    price: 100
+}]
+
+const price2Pay=shoppingCart.reduce((accumulator, item) => accumulator + item.price, 0)
+console.log(price2Pay);
