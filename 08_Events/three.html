@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background: #414141; color: aliceblue;">
+
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+</body>
+<script>
+
+    // setInterval(function(){
+    //     console.log("Abdullah",Date.now());
+    // },1000)
+
+    const sayNameDate = function () {
+        console.log("Abdullah", Date.now());
+        document.querySelector('h1').innerHTML = "Chai aur JavaScript"
+    }
+
+    // setInterval(sayNameDate,2000)
+    // const stopMyName=setInterval(sayNameDate,2000)
+    // clearInterval(stopMyName)
+
+    // document.querySelector('#start').addEventListener('click', function () {
+    //     console.log("Started");
+    //     const stopMyName = setInterval(sayNameDate, 1000)
+
+    // })
+    // document.querySelector('#stop').addEventListener('click', function () {
+    //     console.log("Stopped");
+    //     clearInterval(sayNameDate)
+    // })
+
+
+    const startPrint = function () {
+        console.log("Abdullah", Date.now());
+        // document.querySelector('h1').innerHTML = "Abdullah Bhai"
+    }
+
+    let startinterval;
+    document.querySelector('#start').addEventListener('click', function () {
+        startinterval= setInterval(startPrint, 1000)
+        console.log("Printing Started");
+        document.querySelector('h1').innerHTML = "Abdullah Bhai"
+    })
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(startinterval);
+        console.log("Printing Stopped");
+    })
+</script>
+
+</html>
