@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur Code</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+
+</body>
+<script>
+    let stopComplement;
+    document.querySelector('.start').addEventListener('click', function () {
+        const complement = function () {
+            console.log("Abdullah is One of the best developer in the world");
+            document.querySelector('h1').innerHTML="Abdullah Ansari"
+        }
+        stopComplement = setInterval(complement, 2000)
+        console.log("Printing Start")
+    })
+
+    document.querySelector('.stop').addEventListener('click', function () {
+        clearInterval(stopComplement)
+        console.log("Printing Stop")
+
+    })
+
+</script>
+
+</html>

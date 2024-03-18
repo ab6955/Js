@@ -10,23 +10,23 @@ const buttons = document.querySelectorAll('.button');
 // console.log(buttons)
 
 buttons.forEach(function (button) {
-  // console.log(button);
+  console.log(button);
   button.addEventListener('click', function (e) {
-    // console.log(e);
-    // console.log(e.target);
+    console.log(e);
+    console.log(e.target);
 
-    // if(e.target.id==="grey"){
-    //   body.style.backgroundColor=e.target.id
-    // }
-    // if(e.target.id==="white"){
-    //   body.style.backgroundColor=e.target.id
-    // }
-    // if(e.target.id==="blue"){
-    //   body.style.backgroundColor=e.target.id
-    // }
-    // if(e.target.id==="yellow"){
-    //   body.style.backgroundColor=e.target.id
-    // }
+    if(e.target.id==="grey"){
+      body.style.backgroundColor=e.target.id
+    }
+    if(e.target.id==="white"){
+      body.style.backgroundColor=e.target.id
+    }
+    if(e.target.id==="blue"){
+      body.style.backgroundColor=e.target.id
+    }
+    if(e.target.id==="yellow"){
+      body.style.backgroundColor=e.target.id
+    }
 
     // usong Switch :
     switch (e.target.id) {
@@ -85,7 +85,7 @@ form.addEventListener('submit', function (e) {
 
 ```
 
-## Project3:
+## Project 3:
 
 ```Javascript
 const clock = document.getElementById('clock');
@@ -98,7 +98,8 @@ setInterval(function () {
 }, 1000);
 ```
 
-## Project4:
+## Project 4:
+
 ```Javascript
 let randomNumber = Math.round(Math.random() * 100 + 1);
 // console.log(randomNumber)
@@ -187,5 +188,70 @@ function newGame() {
     playGame = true;
   });
 }
+
+```
+
+## Project 5:
+
+```javascript
+
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>KeyCode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key===" " ?"space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+
+</table>
+
+  `;
+});
+
+
+```
+
+## Project 6:
+
+```Javascript
+
+// generate a random color
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color = color + hex[Math.round(Math.random() * 16)];
+  }
+  return color;
+};
+// console.log(Math.round(Math.random() * 16));
+// console.log(randomColor())
+let startChange;
+const startChangingColor = function () {
+  // if (startChange == null) { // is variable is null then add value to it (it is simply just more efficinet code not more than that.)
+  if (!startChange) {
+    startChange = setInterval(changeColor, 300);
+  }
+  function changeColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = function () {
+  clearInterval(startChange);
+  startChange = null;
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
 ```
