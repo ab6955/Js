@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="yellow">Yellow</button>
+
+</body>
+    <script>
+        // Code below is perfect but what if i have to print 1000 buttons??
+
+        // document.getElementById('red').onclick=function(){
+        //     document.body.style.backgroundColor="red"
+        // }
+        // document.getElementById('blue').onclick=function(){
+        //     document.body.style.backgroundColor="blue"
+        // }
+        // document.getElementById('yellow').onclick=function(){
+        //     document.body.style.backgroundColor="yellow"
+        // }
+
+
+        // then use following code
+        function clickHandler(color){
+            // document.body.style.backgroundColor=color
+
+           return function(){
+                document.body.style.backgroundColor=color
+            }
+        }
+
+        document.getElementById('red').onclick=clickHandler("red")
+        document.getElementById('blue').onclick=clickHandler("blue")
+        document.getElementById('yellow').onclick=clickHandler("yellow")
+
+    </script>
+</html>
