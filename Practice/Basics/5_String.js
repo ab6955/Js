@@ -54,4 +54,4 @@ const dogName="Your dog is not same as his dog!";
 console.log(dogName.toUpperCase());
 console.log(dogName.toLowerCase());
 console.log(dogName.startsWith("Your"));
-console.log(dogName.endsWith("!"));
+console.log(dogName.endsWith("!")); 
